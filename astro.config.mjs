@@ -6,11 +6,10 @@ import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
 
 export default defineConfig({
-    site: "https://minsight.lendmark.lol",
     base: "/",
     trailingSlash: "always",
-    output: "static",
-    site: "https://example.com",
+    output: "server",
+    site: "https://minsight.lendmark.lol",
     integrations: [tailwind(), sitemap(), image()],
     output: "server",
     adapter: node({
