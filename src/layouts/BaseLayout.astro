@@ -1,10 +1,13 @@
 ---
+import MetaTags from "~/components/MetaTags.astro";
 ---
 
 <html lang="cs">
-    <head> </head>
-
+    <head>
+        <MetaTags />
+    </head>
     <body>
+        <slot />
         <script>
             import { io } from "socket.io-client";
 
