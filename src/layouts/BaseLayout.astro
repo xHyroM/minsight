@@ -1,0 +1,17 @@
+---
+---
+
+<html lang="cs">
+    <head> </head>
+
+    <body>
+        <script>
+            import { io } from "socket.io-client";
+
+            const socket = io("ws://localhost:3001");
+            socket.onAny((event, ...args) => {
+                console.log(event, args);
+            });
+        </script>
+    </body>
+</html>
