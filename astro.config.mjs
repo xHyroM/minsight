@@ -13,6 +13,6 @@ export default defineConfig({
     integrations: [tailwind(), sitemap(), image()],
     output: "server",
     adapter: node({
-        mode: "standalone",
+        mode: "middleware",
     }),
 });
